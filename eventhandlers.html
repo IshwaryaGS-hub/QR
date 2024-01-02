@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Adding many event handlers without overwriting an exiting event handlers.</h2>
+        <button id = "myBtn">Try it</button>
+        <script>
+            var x = document.getElementById("myBtn");
+            x.addEventListener("click",myFunction);
+            x.addEventListener("click",AnotherFunction);
+
+            function myFunction(){
+                alert("Hello");
+
+            }
+            function AnotherFunction() {
+                alert("Hellooo World");
+            }
+        
+        </script>
+    </body>
+</html>
